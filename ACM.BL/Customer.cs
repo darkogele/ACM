@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace ACM.BL
 {
     public class Customer
-    {
-       
+    {      
         public int CustomerId { get; set; }
 
         public string EmailAddress { get; set; }
@@ -19,7 +18,16 @@ namespace ACM.BL
         {
             get
             {
-                return LastName + ", " + FirstName;
+                string fullName = LastName;
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(fullName))
+                    {
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
             }
         }
 
@@ -36,5 +44,6 @@ namespace ACM.BL
             }
         }
 
+        public static int InstanceCount { get; set; }
     }
 }
