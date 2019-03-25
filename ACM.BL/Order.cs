@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    class Order
+    public class Order
     {
         public Order()
         {
@@ -19,25 +19,7 @@ namespace ACM.BL
 
         public int OrderId { get; set; }
         public DateTimeOffset? OrderDate { get; set; }
-
-        /// <summary>
-        /// Retrieve one order
-        /// </summary>
-        /// <returns></returns>
-        public Order Retrieve(int orderId)
-        {
-            //code that retrieves the defined order
-            return new Order();
-        }
-
-        /// <summary>
-        /// Add order and save it 
-        /// </summary>
-        public bool Save()
-        {
-            //code for save add
-            return true;
-        }
+      
 
         /// <summary>
         /// Validates the order
