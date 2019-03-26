@@ -28,6 +28,9 @@ namespace ACM.BL
                 product.ProductDescription = "Assorted Size Set of 4 Bright Yellow Mini Sunflowers";
                 product.CurrentPrice = 15.96M;
             }
+            var myObject = new object();
+            Console.WriteLine($"Object: {myObject.ToString()}");
+            Console.WriteLine($"Product: {product.ToString()}");
             return product;
         }
 
@@ -55,7 +58,7 @@ namespace ACM.BL
                 ProductDescription = product.ProductDescription,
                 CurrentPrice = product.CurrentPrice,
             };
-            //code saves product
+            //code saves product dbContext save()
             return true;
         }
     }
