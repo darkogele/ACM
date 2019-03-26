@@ -1,4 +1,28 @@
 
 
-https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m6-relationships&clip=0&mode=live
-Start na 7 module
+https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m7-reuse&clip=0&mode=live
+	Start na 8 module
+
+http://prntscr.com/n309au Klasite
+http://prntscr.com/n30ad6 Vrskite
+
+Association in C#
+The association defines the relationship between an object in C#. An a one-to-one, one-to-many,
+many-to-one and many-to-many relationship can be defined between objects.
+
+For example, An Employee can be associated with multiple projects, 
+whereas a project can have more than one employee.
+
+Composition in C#
+Under Composition, if the parent object is deleted, then the child object also loses its status.
+
+The composition is a special type of Aggregation and gives a part-of relationship.
+
+For example, A Car has an engine. If the car is destroyed, the engine is destroyed as well.
+
+Aggregation in C#
+Aggregation is a direct relation between objects in C#. It is the relationship between objects.
+
+For example, Employee and Department.
+
+An Employee is associated with a single Department, whereas a Department can have more than one employee

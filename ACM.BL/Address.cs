@@ -1,6 +1,6 @@
 ﻿namespace ACM.BL
 {
-    class Address
+    public class Address
     {
         public Address()
         {
