@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Order
+    public class Order : EntityBase
     {
-        public Order(): this(0)
+        public Order() : this(0)
         {
 
         }
@@ -29,7 +29,7 @@ namespace ACM.BL
         /// Validates the order
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (OrderDate == null) isValid = false;

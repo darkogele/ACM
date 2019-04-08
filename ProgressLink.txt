@@ -1,10 +1,15 @@
 
 
-https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m7-reuse&clip=4&mode=live
+https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m9-interfaces&clip=0&mode=live
 	Start na 8.5 module
 
 http://prntscr.com/n309au Klasite
 http://prntscr.com/n30ad6 Vrskite
+http://prntscr.com/n8zefg Polimorfizam preku inheritance 
+
+OOP CORE https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260
+
+Extension Method vs Static http://prntscr.com/n940tz
 
 Association in C#
 The association defines the relationship between an object in C#. An a one-to-one, one-to-many,
@@ -26,3 +31,5 @@ Aggregation is a direct relation between objects in C#. It is the relationship b
 For example, Employee and Department.
 
 An Employee is associated with a single Department, whereas a Department can have more than one employee
+
+pluralsight kingict L3@rn1ngSpr3e

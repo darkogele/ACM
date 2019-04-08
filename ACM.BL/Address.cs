@@ -1,6 +1,6 @@
 ﻿namespace ACM.BL
 {
-    public class Address
+    public class Address : EntityBase
     {
         public Address()
         {
@@ -24,7 +24,7 @@
         /// Validate Address data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (PostalCode == null) isValid = false;

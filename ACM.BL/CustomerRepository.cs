@@ -39,17 +39,26 @@ namespace ACM.BL
         /// </summary>    
         public bool Save(Customer customer)
         {
-            var customerDb = new Customer()
+            var success = true;
+            if (customer.HasChanges)
             {
-                FirstName = customer.FirstName,
-                LastName = customer.LastName,
-                EmailAddress = customer.EmailAddress
-            };
-
-            //code that saves the defined customer
-            //Mapping values before DBContext
-
-            return true;
+                if (customer.IsValid)
+                {
+                    if (customer.IsNew)
+                    {
+                        // Call an insert Stored Procedure
+                    }
+                    else
+                    {
+                        // Call and Update Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }

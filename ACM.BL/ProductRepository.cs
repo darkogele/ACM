@@ -51,15 +51,26 @@ namespace ACM.BL
         /// <returns></returns>
         public bool Save(Product product)
         {
-            // Code that saves the data missing DbContext
-            var productDb = new Product()
+            var success = true;
+            if (product.HasChanges)
             {
-                ProductName = product.ProductName,
-                ProductDescription = product.ProductDescription,
-                CurrentPrice = product.CurrentPrice,
-            };
-            //code saves product dbContext save()
-            return true;
+                if (product.IsValid)
+                {
+                    if (product.IsNew)
+                    {
+                        // Call an insert Stored Procedure
+                    }
+                    else
+                    {
+                        // Call and Update Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }
