@@ -49,5 +49,7 @@ namespace ACM.BL
             if (CurrentPrice == null) isValid = false;
             return isValid;
         }
+
+        public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription} Status {EntityState.ToString()}";
     }
 }

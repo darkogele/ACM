@@ -69,5 +69,14 @@ namespace ACM.BL
             return isValid;
         }
 
+        //-- String Konkatanacija
+        //public string Log()
+        //{
+        //    var logString = CustomerId + ": " + FullName + " " + "Email: " + EmailAddress + " " + "Status: " + EntityState.ToString();
+        //    return logString;
+        //}
+
+        //-- Lambda za toa od gore string interpolation c#6+
+        public string Log() => $"{CustomerId}: {FullName} Email: {EmailAddress} Status: {EntityState.ToString()}";
     }
 }

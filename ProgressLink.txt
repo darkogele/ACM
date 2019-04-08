@@ -1,6 +1,6 @@
 
 
-https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m9-interfaces&clip=0&mode=live
+https://app.pluralsight.com/player?course=object-oriented-programming-fundamentals-csharp&author=deborah-kurata&name=oop-fundamentals-csharp-m9-interfaces&clip=4&mode=live
 	Start na 8.5 module
 
 http://prntscr.com/n309au Klasite
